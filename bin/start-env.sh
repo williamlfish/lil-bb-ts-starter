@@ -14,7 +14,7 @@ if test -f ".env"; then
     set -a; source .env
 fi
 
-if test -f "docker-compose"; then
+if test -f "docker-compose.yaml"; then
     colorP "starting docker-compose"
     docker-compose up -d
 fi
