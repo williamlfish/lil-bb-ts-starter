@@ -10,12 +10,12 @@ colorP() {
 }
 
 if test -f ".env"; then
-    colorp "setting env from .env file"
+    colorP "setting env from .env file"
     set -a; source .env
 fi
 
 if test -f "docker-compose"; then
-        colorp "starting docker-compose"
+    colorP "starting docker-compose"
     docker-compose up -d
 fi
 
